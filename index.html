@@ -5,56 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZionIT Software Development SRL</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0f172a;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
+      background-color: var(--bg);
+      color: var(--fg);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      text-align: center;
+      min-height: 100vh;
       padding: 2rem;
+      text-align: center;
     }
+
     .container {
       max-width: 600px;
     }
+
     .logo {
-      width: 120px;
+      background-color:#fff;
+      border-radius: 100%;
+      width: 100px;
       height: auto;
-      margin-bottom: 1.5rem;
+      margin: 0 auto 1.5rem;
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
+      font-weight: 700;
     }
-    p {
-      font-size: 1.125rem;
+
+    p.subtext {
+      font-size: 1.1rem;
+      color: var(--muted);
       margin-bottom: 2rem;
-      color: #94a3b8;
     }
-    .contact {
-      font-size: 1rem;
-      line-height: 1.75;
-      color: #cbd5e1;
+
+    .contact p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
     }
+
+    strong {
+      color: var(--fg);
+    }
+
     a {
-      color: #38bdf8;
+      color: var(--accent);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
   </style>
 </head>
 <body>
   <div class="container">
     <img src="/ZionIT-Logo1.svg" alt="ZionIT Logo" class="logo" />
     <h1>ZionIT Software Development SRL</h1>
-    <p>Website currently under construction.</p>
+    <p class="subtext">Website currently under construction.</p>
     <div class="contact">
       <p><strong>CEO:</strong> Mihalache Lucian</p>
       <p><strong>Phone:</strong> <a href="tel:+40756105673">+40 756 105 673</a></p>
